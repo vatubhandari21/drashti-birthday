@@ -1869,9 +1869,9 @@ function closeVideoPopup() {
 // PHOTO CARD REVEAL
 
 document.querySelectorAll(".gallery .photo").forEach(function(card) {
-  card.addEventListener("click", function() {
-    card.classList.toggle("revealed");
-  });
+  card.onclick = function() {
+    this.classList.toggle("revealed");
+  };
 });
 </script>
 
