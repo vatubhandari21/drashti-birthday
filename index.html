@@ -1737,65 +1737,7 @@ for(let i = 0; i < 28; i++) {
        Math.random() * .18
 
   });
-  // BIRTHDAY MAGIC MESSAGE
-if (showBirthdayMessage) {
-const oldMessage = document.getElementById("birthdayMagicMessage");
 
-if (oldMessage) {
-  oldMessage.remove();
-}
-
-const birthdayMessage = document.createElement("div");
-
-birthdayMessage.id = "birthdayMagicMessage";
-birthdayMessage.textContent = "HAPPY BIRTHDAY DRACULA 🎂🥳🎉";
-
-birthdayMessage.style.cssText = `
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.6);
-  width: 90%;
-  text-align: center;
-  z-index: 9999;
-  pointer-events: none;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.2rem, 8vw, 5rem);
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.15;
-
-  color: #ffd5e2;
-  text-shadow:
-    0 0 10px rgba(255, 100, 160, .8),
-    0 0 25px rgba(255, 80, 140, .7),
-    0 0 50px rgba(255, 50, 120, .5);
-`;
-
-document.body.appendChild(birthdayMessage);
-
-birthdayMessage.animate(
-  [
-    {
-      opacity: 0,
-      transform: "translate(-50%, -50%) scale(0.6)"
-    },
-    {
-      opacity: 1,
-      transform: "translate(-50%, -50%) scale(1.08)"
-    },
-    {
-      opacity: 1,
-      transform: "translate(-50%, -50%) scale(1)"
-    }
-  ],
-  {
-    duration: 1400,
-    easing: "cubic-bezier(.2,.8,.3,1)",
-    fill: "forwards"
-  }
-);
 
 }
 }
@@ -1873,7 +1815,7 @@ document.querySelectorAll(".gallery .photo").forEach(function(card) {
     this.classList.toggle("revealed");
   };
 });
-  alert("PHOTO SCRIPT IS WORKING");
+ 
 </script>
 
 </body>
