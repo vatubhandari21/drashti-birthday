@@ -1295,7 +1295,7 @@ footer {
       — With love, Vatsal ❤️
     </div>
 
-    <button onclick="celebrate()">
+    <button onclick="celebrate(true)">
       Make a little birthday magic 🎉
     </button>
 
@@ -1599,7 +1599,7 @@ blowBtn.addEventListener("click", async function() {
 
 /* CONFETTI */
 
-function celebrate() {
+function celebrate(showBirthdayMessage =false) {
 
   for(let i = 0; i < 65; i++) {
 
@@ -1738,7 +1738,7 @@ for(let i = 0; i < 28; i++) {
 
   });
   // BIRTHDAY MAGIC MESSAGE
-
+if (showBirthdayMessage) {
 const oldMessage = document.getElementById("birthdayMagicMessage");
 
 if (oldMessage) {
@@ -1798,7 +1798,7 @@ birthdayMessage.animate(
 );
 
 }
-
+}
 
 function drawHearts() {
 
