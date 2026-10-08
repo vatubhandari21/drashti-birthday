@@ -374,6 +374,94 @@ button:hover {
   border-radius: 20px;
   background: #000;
 }
+  /* VIDEO SURPRISE */
+
+.video-section {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.envelope-box {
+  width: 220px;
+  margin: 30px auto 0;
+  cursor: pointer;
+  padding: 28px 20px;
+  border-radius: 28px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid var(--line);
+  box-shadow: 0 25px 80px rgba(0,0,0,.30);
+  transition: .3s;
+}
+
+.envelope-box:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+.envelope {
+  font-size: 5rem;
+}
+
+.envelope-text {
+  margin-top: 10px;
+  color: #ffd5df;
+  font-weight: 600;
+}
+
+
+/* VIDEO POPUP */
+
+.video-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,.82);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.video-popup.show {
+  display: flex;
+}
+
+.video-popup-content {
+  position: relative;
+  width: min(900px,95vw);
+  background: #1a0d17;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 30px 100px rgba(0,0,0,.55);
+  text-align: center;
+}
+
+.video-popup-content h3 {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.video-popup-content video {
+  width: 100%;
+  max-height: 70vh;
+  border-radius: 20px;
+  background: #000;
+  display: block;
+}
+
+.video-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,.12);
+  border: 1px solid var(--line);
+}
   /* CAKE */
 
 .cake-section {
@@ -801,7 +889,7 @@ footer {
 </section>
 
 
-<!-- VIDEO -->
+<!-- VIDEO SURPRISE -->
 
 <section class="video-section">
 
@@ -814,27 +902,49 @@ footer {
       </div>
 
       <h3 class="serif">
-        A Special Video For You ❤️
+        One More Surprise For You ❤️
       </h3>
 
       <p>
-        Some memories are better watched than explained.
+        Tap the envelope when you're ready.
       </p>
 
     </div>
 
-    <div class="video-box">
-
-      <video id="birthdayVideo" controls playsinline preload="auto">
-        <source src="VID-20230620-WA0023.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-
+    <div class="envelope-box" onclick="openVideoPopup()">
+      <div class="envelope">💌</div>
+      <div class="envelope-text">
+        Open Me
+      </div>
     </div>
 
   </div>
 
 </section>
+
+
+<!-- VIDEO POPUP -->
+
+<div class="video-popup" id="videoPopup">
+
+  <div class="video-popup-content">
+
+    <button class="video-close" onclick="closeVideoPopup()">
+      ✕
+    </button>
+
+    <h3 class="serif">
+      A Special Video For You ❤️
+    </h3>
+
+    <video id="birthdayVideo" controls playsinline preload="metadata">
+      <source src="VID-20230620-WA0023.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+
+</div>
   <!-- CAKE -->
 
 <section class="cake-section">
@@ -1189,12 +1299,7 @@ openBtn.addEventListener("click", async function() {
   site.classList.add("show");
 
   musicBtn.style.display = "grid";
-  try {
-  birthdayVideo.currentTime = 0;
-  await birthdayVideo.play();
-} catch(error) {
-  console.log("Video autoplay was blocked.");
-}
+  
 
   try {
 
@@ -1640,6 +1745,19 @@ function drawHearts() {
 
 
 drawHearts();
+  function openVideoPopup() {
+  const popup = document.getElementById("videoPopup");
+  popup.classList.add("show");
+}
+
+function closeVideoPopup() {
+  const popup = document.getElementById("videoPopup");
+  const video = document.getElementById("birthdayVideo");
+
+  video.pause();
+  video.currentTime = 0;
+  popup.classList.remove("show");
+}
 
 </script>
 
