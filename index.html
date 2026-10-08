@@ -4,291 +4,1579 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#120814">
-<title>For Drashti ❤️</title>
+<title>For Drashti ❤️ — From Vatsal</title>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
-:root{
-  --rose:#ff6f91; --pink:#ffb6c8; --cream:#fff5f7; --ink:#21131d;
-  --glass:rgba(255,255,255,.10); --line:rgba(255,255,255,.18);
+:root {
+  --rose: #ff6f91;
+  --pink: #ffb6c8;
+  --line: rgba(255,255,255,.18);
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0; color:#fff; background:#100710;
-  font-family:Poppins,system-ui,sans-serif; overflow-x:hidden;
+
+* {
+  box-sizing: border-box;
 }
-body:before{
-  content:""; position:fixed; inset:0; z-index:-3;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  background: #100710;
+  font-family: Poppins, sans-serif;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
   background:
     radial-gradient(circle at 15% 15%, rgba(255,111,145,.22), transparent 30%),
     radial-gradient(circle at 85% 20%, rgba(177,110,255,.16), transparent 28%),
     linear-gradient(145deg,#100710,#24101f 50%,#0c070c);
 }
-canvas#hearts{position:fixed;inset:0;z-index:-1;pointer-events:none}
-section{position:relative; padding:90px 20px}
-.wrap{max-width:1050px;margin:auto}
-.serif{font-family:"Cormorant Garamond",serif}
 
-#intro{
-  min-height:100svh; display:grid; place-items:center; text-align:center;
-  padding:30px 20px; overflow:hidden;
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
 }
-.intro-card{
-  max-width:760px; width:100%; padding:46px 28px; border:1px solid var(--line);
-  border-radius:32px; background:rgba(255,255,255,.07); backdrop-filter:blur(18px);
-  box-shadow:0 30px 100px rgba(0,0,0,.35);
-}
-.small{letter-spacing:.25em;text-transform:uppercase;font-size:.72rem;color:#ffd6df}
-h1{font-size:clamp(3.2rem,9vw,7rem);line-height:.86;margin:18px 0}
-.intro-card p{max-width:580px;margin:0 auto 28px;color:#f7dfe6;line-height:1.8}
-button{
-  border:0; cursor:pointer; color:#fff; font:600 1rem Poppins;
-  padding:15px 27px; border-radius:999px;
-  background:linear-gradient(135deg,#ff5f8a,#d84679);
-  box-shadow:0 12px 35px rgba(255,95,138,.28);
-  transition:.25s transform,.25s box-shadow;
-}
-button:hover{transform:translateY(-3px);box-shadow:0 17px 42px rgba(255,95,138,.38)}
-#site{display:none}
-#site.show{display:block;animation:fade .9s ease}
-@keyframes fade{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
 
-.hero{text-align:center;min-height:82svh;display:grid;place-items:center}
-.badge{
-  display:inline-block;padding:8px 14px;border:1px solid var(--line);border-radius:999px;
-  background:rgba(255,255,255,.06);font-size:.78rem;color:#ffd9e2
+section {
+  position: relative;
+  padding: 90px 20px;
 }
-.hero h2{font-size:clamp(3.5rem,10vw,8rem);line-height:.82;margin:22px 0 16px}
-.hero h2 span{color:var(--pink)}
-.hero .sub{font-size:1rem;color:#edd4dc;line-height:1.8;max-width:650px;margin:auto}
-.scroll{margin-top:38px;opacity:.7;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase}
 
-.title{text-align:center;margin-bottom:45px}
-.title .eyebrow{color:#ff9fb5;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem}
-.title h3{font:600 clamp(2.3rem,6vw,4.3rem)/1 "Cormorant Garamond",serif;margin:12px 0}
-.title p{color:#d9c2ca;max-width:650px;margin:auto;line-height:1.8}
-
-.letter{
-  max-width:820px;margin:auto;padding:38px clamp(24px,6vw,58px);
-  border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.045));
-  border:1px solid var(--line); box-shadow:0 25px 80px rgba(0,0,0,.25);
+.wrap {
+  max-width: 1050px;
+  margin: auto;
 }
-.letter p{color:#f4e3e8;line-height:2;font-size:1.03rem}
-.letter .sign{color:#ffb4c6;font-family:"Cormorant Garamond",serif;font-size:1.65rem;margin-top:28px}
 
-.gallery{
-  display:grid;grid-template-columns:repeat(12,1fr);gap:16px;
+.serif {
+  font-family: "Cormorant Garamond", serif;
 }
-.photo{
-  position:relative;overflow:hidden;border-radius:24px;min-height:260px;
-  border:1px solid rgba(255,255,255,.15);background:#20131c;
-}
-.photo:nth-child(1){grid-column:span 7;min-height:430px}
-.photo:nth-child(2){grid-column:span 5}
-.photo:nth-child(3){grid-column:span 5}
-.photo:nth-child(4){grid-column:span 7;min-height:430px}
-.photo:nth-child(n+5){grid-column:span 4}
-.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s}
-.photo:hover img{transform:scale(1.06)}
-.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.38))}
-.caption{position:absolute;z-index:2;bottom:15px;left:17px;right:17px;color:#fff;font-size:.8rem}
 
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{
-  padding:28px;border-radius:24px;border:1px solid var(--line);
-  background:rgba(255,255,255,.065);min-height:180px;
-}
-.card .icon{font-size:2rem}.card h4{margin:12px 0 7px;font-size:1.05rem}
-.card p{color:#d7c3ca;line-height:1.7;font-size:.9rem;margin:0}
+/* INTRO */
 
-.final{
-  min-height:85svh;display:grid;place-items:center;text-align:center;
+#intro {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 30px 20px;
 }
-.final-box{max-width:760px}
-.final h3{font-size:clamp(3.2rem,9vw,7rem);line-height:.85;margin:20px 0}
-.final p{color:#e8d4db;line-height:1.9}
-.heart-big{font-size:4rem;animation:pulse 1.3s infinite}
-@keyframes pulse{50%{transform:scale(1.15)}}
 
-.music{
-  position:fixed;right:18px;bottom:18px;z-index:20;
-  width:50px;height:50px;padding:0;border:1px solid var(--line);
-  background:rgba(25,10,22,.82);backdrop-filter:blur(12px);
-  display:grid;place-items:center;font-size:1.2rem;
+.intro-card {
+  max-width: 760px;
+  width: 100%;
+  padding: 50px 28px;
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background: rgba(255,255,255,.07);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 100px rgba(0,0,0,.35);
 }
-footer{text-align:center;padding:30px;color:#8f737e;font-size:.75rem}
 
-@media(max-width:720px){
-  section{padding:70px 15px}
-  .intro-card{padding:38px 20px}
-  .gallery{grid-template-columns:1fr 1fr}
-  .photo,.photo:nth-child(1),.photo:nth-child(2),.photo:nth-child(3),.photo:nth-child(4),.photo:nth-child(n+5){
-    grid-column:span 1;min-height:270px
+.small {
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  font-size: .72rem;
+  color: #ffd6df;
+}
+
+h1 {
+  font-size: clamp(3.2rem,9vw,7rem);
+  line-height: .86;
+  margin: 18px 0;
+}
+
+.intro-card p {
+  max-width: 600px;
+  margin: 0 auto 28px;
+  color: #f7dfe6;
+  line-height: 1.8;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font: 600 1rem Poppins;
+  padding: 15px 27px;
+  border-radius: 999px;
+  background: linear-gradient(135deg,#ff5f8a,#d84679);
+  box-shadow: 0 12px 35px rgba(255,95,138,.28);
+  transition: .25s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+.secondary {
+  background: rgba(255,255,255,.08);
+  border: 1px solid var(--line);
+  box-shadow: none;
+}
+
+/* SITE */
+
+#site {
+  display: none;
+}
+
+#site.show {
+  display: block;
+  animation: fade .9s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
   }
-  .photo:nth-child(1),.photo:nth-child(4){min-height:360px}
-  .cards{grid-template-columns:1fr}
-  .hero{min-height:78svh}
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  min-height: 82svh;
+  display: grid;
+  place-items: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+  font-size: .78rem;
+  color: #ffd9e2;
+}
+
+.hero h2 {
+  font-size: clamp(3.5rem,10vw,8rem);
+  line-height: .82;
+  margin: 22px 0 16px;
+}
+
+.hero h2 span {
+  color: var(--pink);
+}
+
+.hero .sub {
+  font-size: 1rem;
+  color: #edd4dc;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: auto;
+}
+
+.scroll {
+  margin-top: 38px;
+  opacity: .7;
+  font-size: .78rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+/* TITLES */
+
+.title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.eyebrow {
+  color: #ff9fb5;
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  font-size: .72rem;
+}
+
+.title h3 {
+  font: 600 clamp(2.3rem,6vw,4.3rem)/1 "Cormorant Garamond",serif;
+  margin: 12px 0;
+}
+
+.title p {
+  color: #d9c2ca;
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* LETTER */
+
+.letter {
+  max-width: 820px;
+  margin: auto;
+  padding: 38px clamp(24px,6vw,58px);
+  border-radius: 28px;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,.12),
+    rgba(255,255,255,.045)
+  );
+  border: 1px solid var(--line);
+  box-shadow: 0 25px 80px rgba(0,0,0,.25);
+}
+
+.letter p {
+  color: #f4e3e8;
+  line-height: 2;
+  font-size: 1.03rem;
+}
+
+.sign {
+  color: #ffb4c6;
+  font-family: "Cormorant Garamond",serif;
+  font-size: 1.65rem;
+  margin-top: 28px;
+}
+
+/* GALLERY */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 16px;
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  min-height: 260px;
+  border: 1px solid rgba(255,255,255,.15);
+  background: #20131c;
+}
+
+.photo:nth-child(1) {
+  grid-column: span 7;
+  min-height: 430px;
+}
+
+.photo:nth-child(2) {
+  grid-column: span 5;
+}
+
+.photo:nth-child(3) {
+  grid-column: span 5;
+}
+
+.photo:nth-child(4) {
+  grid-column: span 7;
+  min-height: 430px;
+}
+
+.photo:nth-child(n+5) {
+  grid-column: span 4;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .7s;
+}
+
+.photo:hover img {
+  transform: scale(1.06);
+}
+
+.photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    transparent 55%,
+    rgba(0,0,0,.38)
+  );
+}
+
+.caption {
+  position: absolute;
+  z-index: 2;
+  bottom: 15px;
+  left: 17px;
+  right: 17px;
+  color: white;
+  font-size: .8rem;
+}
+
+/* CARDS */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 28px;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.065);
+  min-height: 180px;
+}
+
+.card .icon {
+  font-size: 2rem;
+}
+
+.card h4 {
+  margin: 12px 0 7px;
+}
+
+.card p {
+  color: #d7c3ca;
+  line-height: 1.7;
+  font-size: .9rem;
+}
+
+/* CAKE */
+
+.cake-section {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.cake-box {
+  max-width: 780px;
+  margin: auto;
+  padding: 38px 20px;
+  border-radius: 30px;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,.11),
+    rgba(255,255,255,.04)
+  );
+  border: 1px solid var(--line);
+  box-shadow: 0 25px 80px rgba(0,0,0,.25);
+}
+
+.cake {
+  position: relative;
+  width: min(350px,85vw);
+  height: 310px;
+  margin: 25px auto;
+}
+
+.plate {
+  position: absolute;
+  bottom: 18px;
+  left: 5%;
+  width: 90%;
+  height: 25px;
+  border-radius: 50%;
+  background: linear-gradient(#fff8fc,#caa9b8);
+}
+
+.cake-bottom {
+  position: absolute;
+  bottom: 40px;
+  left: 9%;
+  width: 82%;
+  height: 110px;
+  border-radius: 18px;
+  background: linear-gradient(#e98aa8,#cf5479);
+  box-shadow: inset 0 -8px 0 rgba(0,0,0,.08);
+}
+
+.cake-top {
+  position: absolute;
+  bottom: 125px;
+  left: 19%;
+  width: 62%;
+  height: 78px;
+  border-radius: 18px;
+  background: linear-gradient(#ffd1df,#f58eac);
+}
+
+.icing {
+  position: absolute;
+  bottom: 178px;
+  left: 18%;
+  width: 64%;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff3f7;
+  z-index: 2;
+}
+
+.drip {
+  position: absolute;
+  top: 15px;
+  width: 18px;
+  height: 30px;
+  border-radius: 0 0 12px 12px;
+  background: #fff3f7;
+}
+
+.drip1 { left: 12%; }
+.drip2 { left: 38%; height: 42px; }
+.drip3 { left: 65%; height: 26px; }
+.drip4 { left: 85%; height: 36px; }
+
+/* CANDLES */
+
+.candle {
+  position: absolute;
+  bottom: 200px;
+  width: 19px;
+  height: 65px;
+  border-radius: 5px;
+  background: repeating-linear-gradient(
+    135deg,
+    #fff 0 8px,
+    #ff86a8 8px 15px
+  );
+  z-index: 5;
+}
+
+.candle1 { left: 28%; }
+.candle2 { left: 42%; }
+.candle3 { left: 56%; }
+.candle4 { left: 70%; }
+
+.flame {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  width: 17px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 70%,
+    #fff 0 18%,
+    #ffd34e 20% 52%,
+    #ff7b3d 54% 100%
+  );
+  filter: drop-shadow(0 0 9px #ff9b3d);
+  animation: flicker .18s infinite alternate;
+}
+
+@keyframes flicker {
+  from {
+    transform: translateX(-50%) scale(1) rotate(-2deg);
+  }
+  to {
+    transform: translateX(-50%) scale(1.12) rotate(2deg);
+  }
+}
+
+.flame.off {
+  display: none;
+}
+
+.smoke {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  transform: translateX(-50%);
+  font-size: 28px;
+  color: #ddd;
+}
+
+.smoke.show {
+  display: block;
+  animation: smoke 1.5s forwards;
+}
+
+@keyframes smoke {
+  to {
+    transform: translate(-50%,-70px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.cake-message {
+  color: #ffd8e2;
+  min-height: 35px;
+  margin: 15px auto 22px;
+}
+
+.cake-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mic-status {
+  color: #cdbbc2;
+  font-size: .78rem;
+  margin-top: 15px;
+  min-height: 20px;
+}
+
+/* FINAL */
+
+.final {
+  min-height: 85svh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.final-box {
+  max-width: 760px;
+}
+
+.heart-big {
+  font-size: 4rem;
+  animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.final h3 {
+  font-size: clamp(3.2rem,9vw,7rem);
+  line-height: .85;
+  margin: 20px 0;
+}
+
+.final p {
+  color: #e8d4db;
+  line-height: 1.9;
+}
+
+.by-vatsal {
+  font-family: "Cormorant Garamond",serif;
+  font-size: 1.6rem;
+  color: #ffc0d0;
+  margin: 25px 0;
+}
+
+.music {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 20;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(25,10,22,.85);
+  border: 1px solid var(--line);
+}
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  color: #a98996;
+  font-size: .8rem;
+}
+
+/* MOBILE */
+
+@media(max-width:720px) {
+
+  section {
+    padding: 70px 15px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo,
+  .photo:nth-child(1),
+  .photo:nth-child(2),
+  .photo:nth-child(3),
+  .photo:nth-child(4),
+  .photo:nth-child(n+5) {
+    grid-column: span 1;
+    min-height: 270px;
+  }
+
+  .photo:nth-child(1),
+  .photo:nth-child(4) {
+    min-height: 360px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cake {
+    transform: scale(.9);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>
 </head>
+
 <body>
+
 <canvas id="hearts"></canvas>
 
+<!-- INTRO -->
+
 <section id="intro">
+
   <div class="intro-card">
-    <div class="small">A little surprise for</div>
-    <h1 class="serif">Drashti ❤️</h1>
-    <p>Also known as <b>Dracula</b>… because every great story needs a little bit of chaos, laughter and one very special person.</p>
-    <button id="openBtn">Open Your Birthday Surprise ✨</button>
+
+    <div class="small">
+      A little surprise from Vatsal
+    </div>
+
+    <h1 class="serif">
+      For Drashti ❤️
+    </h1>
+
+    <p>
+      Also known as <b>Dracula</b>…
+      because every great story needs a little chaos,
+      laughter and one very special person.
+    </p>
+
+    <button id="openBtn">
+      Open Your Birthday Surprise ✨
+    </button>
+
   </div>
+
 </section>
 
+
 <div id="site">
-  <section class="hero">
-    <div class="wrap">
-      <div class="badge">21st March? No… today is all about YOU 🎂</div>
-      <h2 class="serif">Happy Birthday,<br><span>Drashti</span> ❤️</h2>
-      <p class="sub">To my best friend, my favourite person to annoy, and someone who somehow makes ordinary moments feel special.</p>
-      <div class="scroll">↓ keep scrolling, Dracula ↓</div>
-    </div>
-  </section>
 
-  <section>
-    <div class="wrap">
-      <div class="title">
-        <div class="eyebrow">From my heart</div>
-        <h3 class="serif">A little letter for you</h3>
-        <p>Because some people deserve more than just a “Happy Birthday” message.</p>
-      </div>
-      <div class="letter">
-        <p>
-          Dear Dracula, ❤️
-        </p>
-        <p>
-          Happy Birthday to one of the most special people in my life. I honestly don't know how to fit everything I feel into a few words, but I know one thing for sure — having you in my life has made it a lot more beautiful.
-        </p>
-        <p>
-          You're not just someone I can call my best friend. You're the person I can laugh with over the most ridiculous things, share random thoughts with, and somehow turn even the simplest moments into memories. And yes… sometimes you can be a little Dracula 😭😂 — but that's exactly what makes you <i>you</i>.
-        </p>
-        <p>
-          On your birthday, I just want you to know how genuinely special you are to me. I hope this new year of your life brings you happiness that stays, dreams that come true, peace in your heart, and countless reasons to smile.
-        </p>
-        <p>
-          Keep being the beautiful, strong and wonderfully crazy person you are. And no matter where life takes us, I hope you always remember that there is someone cheering for you, caring for you, and wishing the very best for you.
-        </p>
-        <p>
-          Happy Birthday, Drashti. 🥰<br>
-          Today is your day — so smile a little extra, laugh a little louder, and enjoy every second of it.
-        </p>
-        <div class="sign">With lots of love,<br>Someone who is very lucky to have you ❤️</div>
-      </div>
-    </div>
-  </section>
+<!-- HERO -->
 
-  <section>
-    <div class="wrap">
-      <div class="title">
-        <div class="eyebrow">Little pieces of you</div>
-        <h3 class="serif">The girl behind the smile ✨</h3>
-        <p>A tiny collection of moments that deserve their own little corner of the internet.</p>
-      </div>
-      <div class="gallery">
-        <div class="photo"><img src="photo1.jpg" alt="Drashti"><div class="caption">Elegance looks good on you ✨</div></div>
-        <div class="photo"><img src="photo2.jpg" alt="Drashti"><div class="caption">That smile ❤️</div></div>
-        <div class="photo"><img src="photo3.jpg" alt="Drashti"><div class="caption">The cute Dracula 😌</div></div>
-        <div class="photo"><img src="photo4.jpg" alt="Drashti"><div class="caption">Beautiful, effortlessly.</div></div>
-        <div class="photo"><img src="photo5.jpg" alt="Drashti"><div class="caption">Main character energy ✨</div></div>
-        <div class="photo"><img src="photo6.jpg" alt="Drashti"><div class="caption">Another favourite moment</div></div>
-        <div class="photo"><img src="photo7.jpg" alt="Drashti"><div class="caption">Okay, this one is adorable 🥰</div></div>
-        <div class="photo"><img src="photo8.jpg" alt="Drashti"><div class="caption">And one more for the birthday girl ❤️</div></div>
-      </div>
-    </div>
-  </section>
+<section class="hero">
 
-  <section>
-    <div class="wrap">
-      <div class="title">
-        <div class="eyebrow">Official Dracula facts</div>
-        <h3 class="serif">Why you're impossible to replace</h3>
-      </div>
-      <div class="cards">
-        <div class="card"><div class="icon">😂</div><h4>Professional troublemaker</h4><p>Somehow you can turn a completely normal conversation into a story we'll laugh about forever.</p></div>
-        <div class="card"><div class="icon">❤️</div><h4>My favourite person</h4><p>You're the kind of person whose presence makes a normal day feel a little warmer.</p></div>
-        <div class="card"><div class="icon">✨</div><h4>One of a kind</h4><p>There is only one Drashti. And honestly, one is more than enough to keep life interesting. 😂</p></div>
-      </div>
-    </div>
-  </section>
+  <div class="wrap">
 
-  <section class="final">
-    <div class="final-box">
-      <div class="heart-big">❤️</div>
-      <div class="small">One last thing...</div>
-      <h3 class="serif">Stay happy.<br>Stay crazy.<br>Stay you.</h3>
+    <div class="badge">
+      Today is all about YOU 🎂
+    </div>
+
+    <h2 class="serif">
+      Happy Birthday,<br>
+      <span>Drashti</span> ❤️
+    </h2>
+
+    <p class="sub">
+      To my best friend, my favourite person to annoy,
+      and someone who somehow makes ordinary moments feel special.
+    </p>
+
+    <div class="scroll">
+      ↓ keep scrolling, Dracula ↓
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- LETTER -->
+
+<section>
+
+  <div class="wrap">
+
+    <div class="title">
+
+      <div class="eyebrow">
+        From my heart
+      </div>
+
+      <h3 class="serif">
+        A little letter for you
+      </h3>
+
       <p>
-        May your birthday be as beautiful as the person you're becoming,
-        and may this year give you everything your heart quietly wishes for.
+        Because some people deserve more than just
+        a “Happy Birthday” message.
       </p>
-      <button onclick="celebrate()">Make a little birthday magic 🎉</button>
-    </div>
-  </section>
 
-  <footer>Made with ❤️ especially for Drashti • Happy Birthday, Dracula!</footer>
+    </div>
+
+
+    <div class="letter">
+
+      <p>
+        Dear Dracula, ❤️
+      </p>
+
+      <p>
+        Happy Birthday to one of the most special people in my life.
+        I honestly don't know how to fit everything I feel into a few words,
+        but I know one thing for sure — having you in my life has made it
+        a lot more beautiful.
+      </p>
+
+      <p>
+        You're not just someone I can call my best friend.
+        You're the person I can laugh with over the most ridiculous things,
+        share random thoughts with, and somehow turn even the simplest
+        moments into memories.
+      </p>
+
+      <p>
+        And yes… sometimes you can be a little Dracula 😭😂 —
+        but that's exactly what makes you <i>you</i>.
+      </p>
+
+      <p>
+        On your birthday, I just want you to know how genuinely special
+        you are to me. I hope this new year of your life brings you
+        happiness that stays, dreams that come true, peace in your heart,
+        and countless reasons to smile.
+      </p>
+
+      <p>
+        Keep being the beautiful, strong and wonderfully crazy person
+        you are. And no matter where life takes us, I hope you always
+        remember that there is someone cheering for you, caring for you,
+        and wishing the very best for you.
+      </p>
+
+      <p>
+        Happy Birthday, Drashti. 🥰
+        <br><br>
+        Today is your day — so smile a little extra,
+        laugh a little louder, and enjoy every second of it.
+      </p>
+
+      <div class="sign">
+        With lots of love,<br>
+        Vatsal ❤️
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CAKE -->
+
+<section class="cake-section">
+
+  <div class="cake-box">
+
+    <div class="title">
+
+      <div class="eyebrow">
+        Your birthday cake 🎂
+      </div>
+
+      <h3 class="serif">
+        Make a wish, Dracula ✨
+      </h3>
+
+      <p>
+        Light the candles, then blow them out —
+        just like a real birthday.
+      </p>
+
+    </div>
+
+
+    <div class="cake">
+
+      <div class="candle candle1">
+        <div class="flame"></div>
+        <div class="smoke">〰</div>
+      </div>
+
+      <div class="candle candle2">
+        <div class="flame"></div>
+        <div class="smoke">〰</div>
+      </div>
+
+      <div class="candle candle3">
+        <div class="flame"></div>
+        <div class="smoke">〰</div>
+      </div>
+
+      <div class="candle candle4">
+        <div class="flame"></div>
+        <div class="smoke">〰</div>
+      </div>
+
+
+      <div class="icing">
+
+        <span class="drip drip1"></span>
+        <span class="drip drip2"></span>
+        <span class="drip drip3"></span>
+        <span class="drip drip4"></span>
+
+      </div>
+
+
+      <div class="cake-top"></div>
+
+      <div class="cake-bottom"></div>
+
+      <div class="plate"></div>
+
+    </div>
+
+
+    <div class="cake-message" id="cakeMessage">
+
+      The candles are waiting… 🕯️
+      <br>
+      Make a wish!
+
+    </div>
+
+
+    <div class="cake-buttons">
+
+      <button id="blowBtn">
+        🎤 Blow the Candles
+      </button>
+
+      <button class="secondary" id="tapBtn">
+        💨 Tap to Blow
+      </button>
+
+    </div>
+
+
+    <div class="mic-status" id="micStatus">
+
+      Microphone is optional.
+      Tap the backup button if needed.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PHOTOS -->
+
+<section>
+
+  <div class="wrap">
+
+    <div class="title">
+
+      <div class="eyebrow">
+        Little pieces of you
+      </div>
+
+      <h3 class="serif">
+        The girl behind the smile ✨
+      </h3>
+
+      <p>
+        A tiny collection of moments that deserve
+        their own little corner of the internet.
+      </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+      <div class="photo">
+        <img src="photo1.jpg" alt="Drashti">
+        <div class="caption">
+          Elegance looks good on you ✨
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="photo2.jpg" alt="Drashti">
+        <div class="caption">
+          That smile ❤️
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="photo3.jpg" alt="Drashti">
+        <div class="caption">
+          The cute Dracula 😌
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="photo4.jpg" alt="Drashti">
+        <div class="caption">
+          Beautiful, effortlessly.
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="photo5.jpg" alt="Drashti">
+        <div class="caption">
+          Main character energy ✨
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="photo6.jpg" alt="Drashti">
+        <div class="caption">
+          Another favourite moment
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="photo7.jpg" alt="Drashti">
+        <div class="caption">
+          Okay, this one is adorable 🥰
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="photo8.jpg" alt="Drashti">
+        <div class="caption">
+          One more for the birthday girl ❤️
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FUN FACTS -->
+
+<section>
+
+  <div class="wrap">
+
+    <div class="title">
+
+      <div class="eyebrow">
+        Official Dracula facts
+      </div>
+
+      <h3 class="serif">
+        Why you're impossible to replace
+      </h3>
+
+    </div>
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="icon">
+          😂
+        </div>
+
+        <h4>
+          Professional troublemaker
+        </h4>
+
+        <p>
+          Somehow you can turn a completely normal
+          conversation into a story we'll laugh about forever.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">
+          ❤️
+        </div>
+
+        <h4>
+          My favourite person
+        </h4>
+
+        <p>
+          You're the kind of person whose presence
+          makes a normal day feel a little warmer.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">
+          ✨
+        </div>
+
+        <h4>
+          One of a kind
+        </h4>
+
+        <p>
+          There is only one Drashti.
+          And honestly, one is more than enough
+          to keep life interesting. 😂
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+  <div class="final-box">
+
+    <div class="heart-big">
+      ❤️
+    </div>
+
+    <div class="small">
+      One last thing...
+    </div>
+
+    <h3 class="serif">
+      Stay happy.<br>
+      Stay crazy.<br>
+      Stay you.
+    </h3>
+
+    <p>
+      May your birthday be as beautiful as the person
+      you're becoming, and may this year give you
+      everything your heart quietly wishes for.
+    </p>
+
+    <div class="by-vatsal">
+      — With love, Vatsal ❤️
+    </div>
+
+    <button onclick="celebrate()">
+      Make a little birthday magic 🎉
+    </button>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  Made with ❤️ by <b>Vatsal</b>
+  especially for Drashti •
+  Happy Birthday, Dracula! 🎂
+
+</footer>
+
 </div>
 
-<button class="music" id="musicBtn" aria-label="Toggle music" style="display:none">🎵</button>
-<audio id="song" src="birthday-song.mp3" preload="auto"></audio>
+
+<!-- MUSIC -->
+
+<button class="music" id="musicBtn" style="display:none">
+  🎵
+</button>
+
+<audio
+  id="song"
+  src="birthday-song.mp3"
+  preload="auto">
+</audio>
+
 
 <script>
-const intro=document.getElementById('intro');
-const site=document.getElementById('site');
-const openBtn=document.getElementById('openBtn');
-const song=document.getElementById('song');
-const musicBtn=document.getElementById('musicBtn');
 
-openBtn.addEventListener('click', async ()=>{
-  intro.style.display='none';
-  site.classList.add('show');
-  musicBtn.style.display='grid';
-  try { await song.play(); musicBtn.textContent='🔊'; }
-  catch(e){ musicBtn.textContent='🎵'; }
-  celebrate();
-  window.scrollTo({top:0,behavior:'smooth'});
-});
+/* OPEN WEBSITE */
 
-musicBtn.addEventListener('click', async ()=>{
-  if(song.paused){ await song.play(); musicBtn.textContent='🔊'; }
-  else { song.pause(); musicBtn.textContent='🎵'; }
-});
+const intro = document.getElementById("intro");
+const site = document.getElementById("site");
+const openBtn = document.getElementById("openBtn");
 
-function celebrate(){
-  for(let i=0;i<55;i++){
-    const s=document.createElement('span');
-    s.textContent=['❤️','💖','✨','🎉','💕'][Math.floor(Math.random()*5)];
-    s.style.position='fixed';s.style.left=(Math.random()*100)+'vw';s.style.top='-30px';
-    s.style.zIndex='50';s.style.fontSize=(14+Math.random()*22)+'px';
-    s.style.pointerEvents='none';document.body.appendChild(s);
-    const dur=1800+Math.random()*1800;
-    s.animate([{transform:'translateY(0) rotate(0deg)',opacity:1},{transform:`translateY(${innerHeight+80}px) rotate(${Math.random()*700-350}deg)`,opacity:0}],{duration:dur,easing:'cubic-bezier(.2,.8,.3,1)'});
-    setTimeout(()=>s.remove(),dur);
+const song = document.getElementById("song");
+const musicBtn = document.getElementById("musicBtn");
+
+
+openBtn.addEventListener("click", async function() {
+
+  intro.style.display = "none";
+
+  site.classList.add("show");
+
+  musicBtn.style.display = "grid";
+
+  try {
+
+    await song.play();
+
+    musicBtn.textContent = "🔊";
+
+  } catch(error) {
+
+    musicBtn.textContent = "🎵";
+
   }
+
+  celebrate();
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+});
+
+
+/* MUSIC BUTTON */
+
+musicBtn.addEventListener("click", async function() {
+
+  if(song.paused) {
+
+    await song.play();
+
+    musicBtn.textContent = "🔊";
+
+  } else {
+
+    song.pause();
+
+    musicBtn.textContent = "🎵";
+
+  }
+
+});
+
+
+/* CANDLE SYSTEM */
+
+const flames = document.querySelectorAll(".flame");
+const smokes = document.querySelectorAll(".smoke");
+
+const cakeMessage = document.getElementById("cakeMessage");
+const blowBtn = document.getElementById("blowBtn");
+const tapBtn = document.getElementById("tapBtn");
+const micStatus = document.getElementById("micStatus");
+
+let candlesOut = false;
+
+
+function blowCandles() {
+
+  if(candlesOut) {
+    return;
+  }
+
+  candlesOut = true;
+
+
+  flames.forEach(function(flame) {
+
+    flame.classList.add("off");
+
+  });
+
+
+  smokes.forEach(function(smoke) {
+
+    smoke.classList.add("show");
+
+  });
+
+
+  cakeMessage.innerHTML =
+    "🎉 Wish made! Happy Birthday, Dracula! ❤️" +
+    "<br><small>May your wish come true.</small>";
+
+
+  blowBtn.textContent =
+    "🎂 Candles Blown!";
+
+
+  celebrate();
+
 }
 
-// Ambient floating hearts.
-const canvas=document.getElementById('hearts'), ctx=canvas.getContext('2d');
-let hearts=[];
-function resize(){canvas.width=innerWidth;canvas.height=innerHeight}
-addEventListener('resize',resize); resize();
-for(let i=0;i<28;i++) hearts.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,s:1+Math.random()*2.2,v:.15+Math.random()*.35,a:.08+Math.random()*.18});
-function draw(){
-  ctx.clearRect(0,0,canvas.width,canvas.height);
-  hearts.forEach(h=>{
-    h.y-=h.v;if(h.y<-20){h.y=innerHeight+20;h.x=Math.random()*innerWidth}
-    ctx.globalAlpha=h.a;ctx.font=(12+h.s*5)+'px serif';ctx.fillText('♡',h.x,h.y);
-  });
-  requestAnimationFrame(draw);
+
+/* BACKUP TAP */
+
+tapBtn.addEventListener("click", function() {
+
+  blowCandles();
+
+});
+
+
+/* MICROPHONE BLOW */
+
+blowBtn.addEventListener("click", async function() {
+
+  if(candlesOut) {
+    return;
+  }
+
+
+  if(!navigator.mediaDevices ||
+     !navigator.mediaDevices.getUserMedia) {
+
+    blowCandles();
+
+    return;
+
+  }
+
+
+  try {
+
+    const stream =
+      await navigator.mediaDevices.getUserMedia({
+        audio: true
+      });
+
+
+    micStatus.textContent =
+      "🎤 Listening… blow toward your microphone!";
+
+
+    const AudioContext =
+      window.AudioContext ||
+      window.webkitAudioContext;
+
+
+    const audioContext =
+      new AudioContext();
+
+
+    const analyser =
+      audioContext.createAnalyser();
+
+
+    analyser.fftSize = 1024;
+
+
+    const source =
+      audioContext.createMediaStreamSource(stream);
+
+
+    source.connect(analyser);
+
+
+    const data =
+      new Uint8Array(analyser.fftSize);
+
+
+    let loudCount = 0;
+
+    const startTime = Date.now();
+
+
+    function detectBlow() {
+
+      analyser.getByteTimeDomainData(data);
+
+
+      let sum = 0;
+
+
+      for(let i = 0; i < data.length; i++) {
+
+        const value =
+          (data[i] - 128) / 128;
+
+        sum += value * value;
+
+      }
+
+
+      const rms =
+        Math.sqrt(sum / data.length);
+
+
+      if(rms > 0.12) {
+
+        loudCount++;
+
+      } else {
+
+        loudCount =
+          Math.max(0,loudCount - 1);
+
+      }
+
+
+      if(loudCount >= 5) {
+
+        stream.getTracks().forEach(
+          track => track.stop()
+        );
+
+        audioContext.close();
+
+        blowCandles();
+
+        return;
+
+      }
+
+
+      if(Date.now() - startTime < 12000) {
+
+        requestAnimationFrame(detectBlow);
+
+      } else {
+
+        stream.getTracks().forEach(
+          track => track.stop()
+        );
+
+        audioContext.close();
+
+        micStatus.textContent =
+          "No strong blow detected. Use “Tap to Blow” 💨";
+
+      }
+
+    }
+
+
+    detectBlow();
+
+
+  } catch(error) {
+
+    micStatus.textContent =
+      "Microphone permission unavailable. Use “Tap to Blow” 💨";
+
+  }
+
+});
+
+
+/* CONFETTI */
+
+function celebrate() {
+
+  for(let i = 0; i < 65; i++) {
+
+    const item =
+      document.createElement("span");
+
+
+    const symbols = [
+      "❤️",
+      "💖",
+      "✨",
+      "🎉",
+      "💕",
+      "🎂"
+    ];
+
+
+    item.textContent =
+      symbols[
+        Math.floor(
+          Math.random() * symbols.length
+        )
+      ];
+
+
+    item.style.position = "fixed";
+
+    item.style.left =
+      Math.random() * 100 + "vw";
+
+    item.style.top = "-30px";
+
+    item.style.zIndex = "50";
+
+    item.style.fontSize =
+      14 + Math.random() * 22 + "px";
+
+    item.style.pointerEvents = "none";
+
+
+    document.body.appendChild(item);
+
+
+    const duration =
+      1800 + Math.random() * 1800;
+
+
+    item.animate(
+
+      [
+        {
+          transform:
+            "translateY(0) rotate(0deg)",
+          opacity: 1
+        },
+
+        {
+          transform:
+            "translateY(" +
+            (innerHeight + 80) +
+            "px) rotate(" +
+            (Math.random() * 700 - 350) +
+            "deg)",
+
+          opacity: 0
+        }
+      ],
+
+      {
+        duration: duration,
+        easing: "cubic-bezier(.2,.8,.3,1)"
+      }
+
+    );
+
+
+    setTimeout(
+      () => item.remove(),
+      duration
+    );
+
+  }
+
 }
-draw();
+
+
+/* FLOATING HEARTS */
+
+const canvas =
+  document.getElementById("hearts");
+
+const ctx =
+  canvas.getContext("2d");
+
+let hearts = [];
+
+
+function resizeCanvas() {
+
+  canvas.width =
+    window.innerWidth;
+
+  canvas.height =
+    window.innerHeight;
+
+}
+
+
+window.addEventListener(
+  "resize",
+  resizeCanvas
+);
+
+
+resizeCanvas();
+
+
+for(let i = 0; i < 28; i++) {
+
+  hearts.push({
+
+    x: Math.random() *
+       window.innerWidth,
+
+    y: Math.random() *
+       window.innerHeight,
+
+    size: 1 +
+       Math.random() * 2.2,
+
+    speed: .15 +
+       Math.random() * .35,
+
+    opacity: .08 +
+       Math.random() * .18
+
+  });
+
+}
+
+
+function drawHearts() {
+
+  ctx.clearRect(
+    0,
+    0,
+    canvas.width,
+    canvas.height
+  );
+
+
+  hearts.forEach(function(heart) {
+
+    heart.y -= heart.speed;
+
+
+    if(heart.y < -20) {
+
+      heart.y =
+        canvas.height + 20;
+
+      heart.x =
+        Math.random() *
+        canvas.width;
+
+    }
+
+
+    ctx.globalAlpha =
+      heart.opacity;
+
+
+    ctx.font =
+      (12 + heart.size * 5) +
+      "px serif";
+
+
+    ctx.fillText(
+      "♡",
+      heart.x,
+      heart.y
+    );
+
+  });
+
+
+  requestAnimationFrame(
+    drawHearts
+  );
+
+}
+
+
+drawHearts();
+
 </script>
+
 </body>
 </html>
