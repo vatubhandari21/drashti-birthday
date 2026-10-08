@@ -462,6 +462,55 @@ button:hover {
   background: rgba(255,255,255,.12);
   border: 1px solid var(--line);
 }
+ /* PHOTO REVEAL CARDS */
+
+.gallery .photo {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.gallery .photo::after {
+  content: "💌\A Tap to reveal ❤️";
+  white-space: pre;
+
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.5;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 80, 140, 0.97),
+    rgba(100, 35, 90, 0.99)
+  );
+
+  border-radius: inherit;
+
+  transform-origin: left center;
+  transition: transform 0.75s ease, opacity 0.4s ease;
+
+  backface-visibility: hidden;
+}
+
+.gallery .photo.revealed::after {
+  transform: perspective(900px) rotateY(-180deg);
+  opacity: 0;
+  pointer-events: none;
+}
   /* CAKE */
 
 .cake-section {
@@ -1063,7 +1112,7 @@ footer {
 
       <p>
         A tiny collection of moments that deserve
-        their own little corner of the internet.
+        your own little corner of the internet.
       </p>
 
     </div>
@@ -1758,7 +1807,13 @@ function closeVideoPopup() {
   video.currentTime = 0;
   popup.classList.remove("show");
 }
+// PHOTO CARD REVEAL
 
+document.querySelectorAll(".gallery .photo").forEach(function(card) {
+  card.addEventListener("click", function() {
+    card.classList.toggle("revealed");
+  });
+});
 </script>
 
 </body>
